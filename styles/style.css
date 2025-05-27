@@ -14,6 +14,7 @@
   border:none;
   border-radius: 10px;
   background-image:linear-gradient( to right,  #FFA500 , #FFD447);
+  box-shadow: 0px 4px 4px 0px #00000025;
 }
 #btn:hover{
   background-image:linear-gradient( to right, red , orange);
@@ -44,26 +45,139 @@ color: #FFA500;
 
 /* banner section */
 .banner{
-  width: 1260px ;
-  margin: 0px auto;
+  max-width:1260px;
+  margin:100px auto;
   background-color:#E6EDF9;
   border-radius:16px;
-  padding:40px 60px ;
+  padding:20px 0px;
   text-align: center;
   
 }
 .banner img ,
 .banner h2,  
-.banner p{
+.banner p
+{
   margin-bottom: 20px;
 }
 .banner-title{
-  font-size: 48px;
+  font-size:48px;
   font-weight: 800;
 }
-.banner p{
+.banner p ,
+.web-container p,
+.inspiration p,
+.card-section p{
   color:gray;
 }
+/* web development */
+.web-container {
+  text-align: center;
+  max-width:1260px;
+  margin:100px auto;
+}
+.web-container h3,
+.inspiration h3{
+font-size: 32px;
+font-weight: 800;
+margin-bottom: 24px;
+}
+
+.web-container p,
+.inspiration p{
+  margin-bottom: 48px;
+
+}
+.card {
+  background-color:#E6EDF9;
+  padding:40px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:30px;
+  border-radius:16px;
+} 
+.card h2{
+  font-size: 24px;
+  font-weight: 700;
+}
+.card *{
+  margin-bottom:30px;
+}
+/* inspiration section */
+.inspiration{
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+ .youtube{
+  border: 2px solid #0D132120;
+  border-radius: 16px;
+
+ }
+iframe{
+  border-radius:20px;
+  margin:16px 0 ;
+}
+/* card-section */
+.card-section{
+  
+  max-width:1260px;
+  margin:100px auto;
+}
+.card-section >*{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-section> h3{
+  font-size: 32px;
+font-weight: 800;
+}
+.card-container{
+display: flex;
+justify-content: space-between;
+gap:30px;
+
+}
+.card-1{
+  background-image: linear-gradient(#E6EDF9 , #9DE5FF);
+  padding: 40px;
+  text-align: left;
+  border-radius: 16px;
+  width: 365px;
+  box-shadow: 0px 4px 40px 0px #00000025;
+}
+.card-1 h3{
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.card-1 img{
+  margin-bottom: 24px;
+}
+.card-1 a{
+  font-weight: 700;
+  color: black;
+
+}
+/* footer */
+.footer{
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  padding:38px 150px ;
+}
+.footer h3{
+  font-size: 20px;
+  font-weight: 600;
+}
+.footer img{
+  margin-right: 24px;
+}
+
+
 
 
 
@@ -76,4 +190,47 @@ color: #FFA500;
   .nav-container{
     padding:12px;
   }
+  .banner{
+    margin: 50px auto;
+    margin:20px;
+  }
+  .web-container {
+    padding: 20px;
+  }
+  .inspiration{
+  margin: 0;
+  text-align: center;
+}
+ .youtube{
+  margin: 16px;
+  padding: 16px;
+  
+
+ }
+iframe{
+  width:100%; 
+}
+  .card{
+    flex-direction: column-reverse;
+    padding:20px;
+    padding-bottom: 0;
+  }
+  .card img{
+    width: 100%;
+  }
+  
+  .card-container{
+    flex-direction: column;
+
+  }
+  .card-1{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer{
+   flex-direction: column;
+  padding:38px;
+
+}
 }
